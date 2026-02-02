@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./reports:/app/reports
+      - ./coverage.xml:/app/coverage.xml

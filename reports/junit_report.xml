@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="3" time="1.735" timestamp="2026-02-02T00:47:49.869794+00:00" hostname="267b7ab205e5"><testcase classname="tests.test_health_api" name="test_health_endpoint" time="0.013" /><testcase classname="tests.test_ui_login" name="test_login_ui" time="1.667" /><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/_pytest/main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/usr/local/lib/python3.10/site-packages/_pytest/main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/usr/local/lib/python3.10/site-packages/_pytest/logging.py", line 801, in pytest_runtestloop
+    return (yield)  # Run all the tests.
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/usr/local/lib/python3.10/site-packages/_pytest/terminal.py", line 707, in pytest_runtestloop
+    result = yield
+  File "/usr/local/lib/python3.10/site-packages/pluggy/_callers.py", line 152, in _multicall
+    teardown.send(result)
+  File "/usr/local/lib/python3.10/site-packages/pytest_cov/plugin.py", line 359, in pytest_runtestloop
+    self.cov_total = self.cov_controller.summary(self.cov_report)
+  File "/usr/local/lib/python3.10/site-packages/pytest_cov/engine.py", line 55, in ensure_topdir_wrapper
+    return meth(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/pytest_cov/engine.py", line 214, in summary
+    total = self.cov.xml_report(ignore_errors=True, outfile=output)
+  File "/usr/local/lib/python3.10/site-packages/coverage/control.py", line 1293, in xml_report
+    return render_report(self.config.xml_output, XmlReporter(self), morfs, self._message)
+  File "/usr/local/lib/python3.10/site-packages/coverage/report_core.py", line 54, in render_report
+    outfile = open(output_path, "w", encoding="utf-8")
+IsADirectoryError: [Errno 21] Is a directory: 'coverage.xml'</error></testcase></testsuite></testsuites>
